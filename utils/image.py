@@ -2,10 +2,7 @@ import cv2
 import numpy as np
 
 
-def resize_image(filepath, is_displaying=False):
-
-    if not is_displaying:
-        return cv2.imread(filepath)
+def resize_image(filepath):
 
     # This resizes the image but maintains the aspect ratio
     image = cv2.imread(filepath)
@@ -109,8 +106,7 @@ def display(circles):
 
 def get_score(filepath):
 
-    # Change `is_displaying` to `True` if you're debugging with display
-    image = resize_image(filepath, is_displaying=True)
+    image = resize_image(filepath)
 
     image = filter_image(image)
 
