@@ -110,7 +110,7 @@ def display(circles):
 def get_score(filepath):
 
     # Change `is_displaying` to `True` if you're debugging with display
-    image = resize_image(filepath, is_displaying=False)
+    image = resize_image(filepath, is_displaying=True)
 
     image = filter_image(image)
 
