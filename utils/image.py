@@ -94,7 +94,7 @@ def circle_domino_dots(image, keypoints):
     return circles
 
 
-def add_text_and_circles_to_image(image, circles, text):
+def add_text_and_circles_to_image(circles, text):
     cv2.putText(circles, text, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 100, 255), 2)
 
 
