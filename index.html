@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    const blah = async () => {
+      const response = await fetch("http://localhost:8000");
+      const myJson = await response.json();
+      console.log(myJson);
+    };
+    document
+      .getElementById("imageUploadInput")
+      .addEventListener("change", function (e) {
+        if (e.target.files[0]) {
+          blah().then();
+        }
+      });
+  </script>
+  <body>
+    <div>
+      <p>Upload Image</p>
+      <form
+        action="http://localhost:8000/count/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="file" value="image" name="image" />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
