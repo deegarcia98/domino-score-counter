@@ -17,4 +17,4 @@ import pytest
     ],
 )
 def test_get_score(test_input, expected):
-    assert get_score(f"test-images/{test_input}.png") == expected
+    assert get_score(filepath=f"test-images/{test_input}.png") == expected
