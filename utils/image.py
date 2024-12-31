@@ -2,10 +2,12 @@ import cv2
 import numpy as np
 
 
-def resize_image(filepath):
-
+def resize_image(image=None, filepath=None):
     # This resizes the image but maintains the aspect ratio
-    image = cv2.imread(filepath)
+
+    # If the image was received via API, there will be no filepath
+    if filepath and not image:
+        image = cv2.imread(filepath)
 
     (h, w) = image.shape[:2]
 
@@ -104,9 +106,14 @@ def display(circles):
     cv2.destroyAllWindows()
 
 
-def get_score(filepath):
+def decode_image(file_contents):
+    nparr = np.fromstring(file_contents, np.uint8)
+    return cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
-    image = resize_image(filepath)
+
+def get_score(image=None, filepath=None):
+
+    image = resize_image(image, filepath)
 
     image = filter_image(image)
 
