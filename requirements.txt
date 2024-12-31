@@ -3,3 +3,4 @@ numpy
 matplotlib
 fastapi[standard]
 pytest
+python-multipart
