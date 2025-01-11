@@ -13,8 +13,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-<!-- [![project_license][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
+[![project_license][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -49,23 +49,23 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <!-- <ul>
+      <ul>
         <li><a href="#built-with">Built With</a></li>
-      </ul> -->
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <!-- <li><a href="#prerequisites">Prerequisites</a></li> -->
+        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <!-- <li><a href="#license">License</a></li> -->
-    <!-- <li><a href="#contact">Contact</a></li> -->
-    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -76,16 +76,14 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This project was built to assist with `DominoScore counter app link here`. Counting dots is hard. This tries to make it easier.
-
 <!-- TODO: Finish replacing/removing these -->
-<!-- Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `deegarcia98`, `domino-score-counter`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `domino-score-counter`, `Python API to count the domino score.`, `project_license` -->
+Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `deegarcia98`, `domino-score-counter`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `domino-score-counter`, `Python API to count the domino score.`, `project_license`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ### Built With -->
+### Built With
 
 <!-- TODO: Make this work -->
 <!-- * [![Python][Python]][Python-url] -->
@@ -98,43 +96,44 @@ This project was built to assist with `DominoScore counter app link here`. Count
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url] -->
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-<!-- ### Prerequisites
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* pip
+* npm
   ```sh
-  pip install -r requirements.txt 
-  ``` -->
+  npm install npm@latest -g
+  ```
 
 ### Installation
 
-1. Clone the repo
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
    ```sh
    git clone https://github.com/deegarcia98/domino-score-counter.git
    ```
-2. Create a virtual environment
+3. Install NPM packages
    ```sh
-   python3 -m venv venv
+   npm install
    ```
-3. Source virtual environment (this will vary depending on operating system)
-   ```sh
-   source ./venv/bin/activate`  
-4. Install pip packages
-   ```sh
-   pip install -r requirements.txt 
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
    ```
-6. Run the API 
+5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   fastapi dev main.py
+   git remote set-url origin deegarcia98/domino-score-counter
+   git remote -v # confirm the changes
    ```
-6. You can now open `index.html` and use the demo app to see it functioning
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,10 +153,10 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- ROADMAP -->
 ## Roadmap
 
-<!-- - [ ] Feature 1
+- [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-    - [ ] Nested Feature -->
+    - [ ] Nested Feature
 
 See the [open issues](https://github.com/deegarcia98/domino-score-counter/issues) for a full list of proposed features (and known issues).
 
